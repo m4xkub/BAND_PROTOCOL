@@ -1,30 +1,63 @@
-# BAND_PROTOCOL
-This repository's purpose is for BAND PROTOCOL company
 
-for program 1,2 use g++ to comply the program
-example command : g++ FirstQuestion.cpp -o FirstQuestion
-then : ./FirstQuestion
+# BAND PROTOCOL
 
-Problem 1: Boss Baby's Revenge
-  Time complexity : O(n)
-  Space complexity : O(n)
+This repository contains programs for **BAND PROTOCOL** company.
 
-Problem 2: Superman's Chicken Rescue
-  Time complexity : O(n)
-  Space complexity : O(n)
+## Problem 1: Boss Baby's Revenge
 
-Problem 3: Transaction Broadcasting and Monitoring Client
-  cd into ThridQuestion folder
-  run go run main.go to start up
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
 
-  server should run on port 8080 (you can change it in main.go line 38)
+### Instructions:
+1. Compile the program using `g++`:
+   ```bash
+   g++ FirstQuestion.cpp -o FirstQuestion
+   ```
+2. Run the compiled program:
+   ```bash
+   ./FirstQuestion
+   ```
 
-  localhost:8080//CreateTransaction for creating a transaction
-    example of body
-    {
-      "symbol" : "BTC",
-      "price" : 4500
-    }
+## Problem 2: Superman's Chicken Rescue
+
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+
+### Instructions:
+1. Compile the program using `g++`:
+   ```bash
+   g++ SecondQuestion.cpp -o SecondQuestion
+   ```
+2. Run the compiled program:
+   ```bash
+   ./SecondQuestion
+   ```
+
+## Problem 3: Transaction Broadcasting and Monitoring Client
+
+1. **Navigate to the `ThirdQuestion` folder**:
+   ```bash
+   cd ThirdQuestion
+   ```
+
+2. **Run the Go program**:
+   ```bash
+   go run main.go
+   ```
+
+3. **Server Configuration**:
+   - The server runs on port **8080** by default. You can change this in `main.go` (line 38).
+
+4. **Endpoints**:
+
+   - `POST localhost:8080/CreateTransaction`: Creates a new transaction.
+
+     **Example body**:
+     ```json
+     {
+       "symbol": "BTC",
+       "price": 4500
+     }
 
   - use main.go as a entry point for this program
   - controller folder is for receiving request from user
